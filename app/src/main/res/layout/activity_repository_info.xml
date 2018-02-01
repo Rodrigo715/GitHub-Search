@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/transparent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/image_collapse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitCenter"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:background="@android:color/transparent"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_separator"
+                android:layout_marginLeft="@dimen/margin_separator"
+                android:layout_marginRight="@dimen/margin_separator"
+                android:background="@color/colorSeparator" />
+
+            <TextView
+                android:id="@+id/description_repo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_medium"
+                android:textSize="@dimen/textSize_large"
+                tools:text="Material Design icons by Google" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_separator"
+                android:layout_marginLeft="@dimen/margin_separator"
+                android:layout_marginRight="@dimen/margin_separator"
+                android:background="@color/colorSeparator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding_medium"
+                android:text="@string/principal_contri"
+                android:textSize="@dimen/textSize_large" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_contributors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/padding_small" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_separator"
+                android:layout_marginLeft="@dimen/margin_separator"
+                android:layout_marginRight="@dimen/margin_separator"
+                android:background="@color/colorSeparator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding_medium"
+                android:text="@string/ultim_issues"
+                android:textSize="@dimen/textSize_large" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_issues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_medium"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

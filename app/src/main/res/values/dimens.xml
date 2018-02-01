@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_list_height">100dp</dimen>
+    <dimen name="image_list_width">100dp</dimen>
+
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_medium">10dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+
+    <dimen name="height_separator">1dp</dimen>
+    <dimen name="textSize_large">18sp</dimen>
+    <dimen name="textSize_medium">14sp</dimen>
+
+    <dimen name="image_info_height">250dp</dimen>
+    <dimen name="image_info_width">250dp</dimen>
+    <dimen name="margin_separator">8dp</dimen>
+
+</resources>

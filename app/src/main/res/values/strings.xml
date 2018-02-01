@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GitHub Search</string>
+    <string name="intro_lenguaje">Introduce un lenguaje</string>
+    <string name="buscar">Buscar</string>
+    <string name="error">Verifique su conexión a Internet</string>
+    <string name="principal_contri">Principales contrbuidores</string>
+    <string name="ultim_issues">Últimos issues reportados</string>
+    <string name="realiza_busqueda">¡Realiza una búsqueda!</string>
+
+</resources>
